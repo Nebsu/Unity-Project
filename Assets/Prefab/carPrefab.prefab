@@ -364,9 +364,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6144277720805634954}
   - component: {fileID: 4468090295222160436}
-  - component: {fileID: 2612508083369550435}
   - component: {fileID: 3055326290597129606}
   - component: {fileID: 6983087770765154320}
+  - component: {fileID: 2323146188481933361}
   m_Layer: 0
   m_Name: carPrefab
   m_TagString: Untagged
@@ -416,25 +416,6 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &2612508083369550435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6646466638186130938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4a1d25554701fd8418b5592fb806534a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  agent: {fileID: 4468090295222160436}
-  player: {fileID: 0}
-  chaseSpeed: 10
-  acceleration: 6
-  angularSpeed: 120
-  stoppingDistance: 2
-  velocity: {x: 0, y: 0, z: 0}
 --- !u!65 &3055326290597129606
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -483,6 +464,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2323146188481933361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6646466638186130938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2a6f3d045f98c45229fb3730d58f3e77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 4468090295222160436}
+  player: {fileID: 0}
+  chaseSpeed: 10
+  acceleration: 8
+  angularSpeed: 120
+  stoppingDistance: 2
+  velocity: {x: 0, y: 0, z: 0}
 --- !u!1 &7513798267580876397
 GameObject:
   m_ObjectHideFlags: 0
